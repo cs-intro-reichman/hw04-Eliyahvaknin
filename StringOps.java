@@ -15,7 +15,7 @@ public class StringOps {
                 ans+=currentChar;
             }
              else if (currentChar==' ' && currentChar+1< 'a' ||  currentChar+1< 'a'){   
-                ans+=(char) (currentChar + 32);
+                ans+=(char) (currentChar + 32); // TODO: don't need this casting
                 flip =false;
             } else if ("aeiou".indexOf(currentChar) != -1) {  
                 ans += (char) (currentChar - 32);            
@@ -45,6 +45,7 @@ public class StringOps {
                 for (int j = 0; j < helper.length(); j++) {
                     boolean yep =true;
                 if (yep) {
+                    // TODO: your code should be very clean and readable, put spaces before and after '='
                     helper=Makescapitalletters(helper);
                     ans+=helper;
                     break;

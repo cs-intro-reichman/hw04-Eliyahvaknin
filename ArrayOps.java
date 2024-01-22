@@ -14,7 +14,7 @@ public class ArrayOps {
             if(!isFound) {
                 return number;
             }
-
+        // TODO: remove this empty lines
         
     
     }
@@ -30,10 +30,13 @@ public class ArrayOps {
                 max = array[i];
                 max_index = i;
             }
-
+    // TODO: broken indentations from here!!
     }
-    array[max_index] = Integer.MIN_VALUE;
+    // TODO: this cause side effect to the function, you not only find max value,
+    // but change the values of the array. Bad practices! Dangerous for bugs.
+    array[max_index] = Integer.MIN_VALUE; 
 
+    // TODO: actually here you find max again. So create helper function findMax. Don't repeat your code.
      int  max2 = array[0];
     for(int i=1; i<array.length; i++) {
         if(array[i] > max2) {
@@ -71,7 +74,7 @@ return max2;
         if (checkElements(array1, array2) &&  checkElements(array2, array1)) {
 
                 return true;
-}
+} // TODO: broken indentations
 else {
     return false;
 }
